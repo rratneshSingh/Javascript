@@ -13,4 +13,11 @@ function bam(baz){
     baz();
 }
 
-// baz can still access bar even if it is executed outside its lexical scope
+foo();
+
+// baz can still access bar even if it is executed outside its lexical scope.
+
+// globalScope = foo , bam
+// fooScope = bar("bar"), baz.
+// bamScope = baz,
+// bazScope = 

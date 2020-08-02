@@ -10,3 +10,8 @@ const b = {
 
 b.name = 'Singh';
 b.addres = 'allabad';
+
+
+// let does not hoist
+// let is block scoped
+// const does not allow reassignment

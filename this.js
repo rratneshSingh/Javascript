@@ -23,5 +23,3 @@ var o3 = { bar: "bar3", foo: foo };
 foo();
 o2.foo();
 o3.foo();
- 
-

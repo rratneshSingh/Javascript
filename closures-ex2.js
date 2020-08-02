@@ -3,7 +3,11 @@ function foo(){
 
     setTimeout( function(){
         console.log(bar);
-    }, 1000);
+    }, 0);
+
+    console.log('jsksjkjk');
+
+
 }
 
 foo();
