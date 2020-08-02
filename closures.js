@@ -1,11 +1,16 @@
-function parent(){
-    var c = 'p';
-    return function child(){
-        var c = 'c';
-        return function grandChild(c){
-            console.log(c);
-        }
+// Closure is when a function remembers its lexical scope even when the function is 
+// executed outside its lexical scope.
+
+function foo(){
+    var bar = "bar";
+    function baz(){
+        console.log(bar);
     }
+    bam(baz);
 }
 
-parent()()('h');
+function bam(baz){
+    baz();
+}
+
+// baz can still access bar even if it is executed outside its lexical scope
