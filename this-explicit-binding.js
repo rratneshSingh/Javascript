@@ -7,7 +7,7 @@ function foo(){
 
 var bar = "bar1";
 var obj = {
-    bar: "bar2"
+    bar: "bar2",
 };
 
 foo();
