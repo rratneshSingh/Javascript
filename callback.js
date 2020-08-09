@@ -1,5 +1,4 @@
-Array.prototype.mysort = function(compare) {
-    console.log('mysort');
+Array.prototype.sort = function(compare) {
     bubble_Sort(this, compare);
 }
 
@@ -42,4 +41,4 @@ arr.sort(function(a, b){
     }
     return false;
 });
-
+console.log(arr);
