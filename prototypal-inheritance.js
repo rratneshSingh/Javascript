@@ -11,8 +11,9 @@ function Bar(who){
 }
 
 Bar.prototype = Object.create(Foo.prototype);
+Bar.prototype.constructor = Bar;
 
-console.log(Bar.prototype);
+// console.log(Bar.prototype);
 
 Bar.prototype.speak = function(){
     console.log("Hello" + this.identify() + ".");
