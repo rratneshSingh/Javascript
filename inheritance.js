@@ -1,4 +1,5 @@
 function BMW() {
+    Vehicle.call(this);
 }
 
 function KTM(owner) {
@@ -6,6 +7,7 @@ function KTM(owner) {
 }
 
 function Vehicle(){
+    this.tyres = 4;
 }
 
 Vehicle.prototype.start = function(){
@@ -21,5 +23,3 @@ BMW.prototype.constructor = BMW;
 var ktmObj1 = new KTM('Ratnesh');
 var ktmObj2 = new KTM('Pragya');
 var bmwObj = new BMW();
-
-console.log(BMW.prototype.constructor);
