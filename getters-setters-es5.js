@@ -1,18 +1,18 @@
 function Car() {
-    let noOfTyres = 4;
+    let _noOfTyres = 4;
 
     this.maxSpeed = 100;
 
     Object.defineProperty(this, 'noOfTyres', {
         get: function () {
-            return noOfTyres;
+            return _noOfTyres;
         },
         set: function (value) {
             if (!value) {
                 console.log('Invalid arguments');
                 return;
             }
-            noOfTyres = value;
+            _noOfTyres = value;
         }
     })
 }
