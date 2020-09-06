@@ -1,0 +1,34 @@
+Modules - We write all code in one file is not good. Rather we distribute code in different files
+and call each file as modules.
+
+Benefits: 
+
+1. Maintainability
+2. Reuse
+3. Abstraction - Hiding the complexities and exposing only the essentials.
+
+No Modules in ES5
+
+Solutions then - Module Formats: 
+1. AMD - Asynchronous Module definition. - Browser.
+2. CommonJS - Node
+3. UMD - Universal Module Definition - Both Browser and Node.
+
+
+Creating Modules: 
+
+1. Related things go inside one module.
+2. By default every thing inside a module is private i.e not accessible from outside.
+
+
+ES6 Tooling (Browser)
+
+When using modern JS we need two types of tools: Transpiler + Bundler
+
+Transpiler - Translator + Compiler - Its takes our modern JS Code and converts it into a code that all browsers can understand.
+Example: Babel
+
+Bundler - Collects our all JS files and creates one file called Bundle.
+Example: Webpack - combine all our JS files into a single files. It minifies our code( removing whitespace and comments)
+and then it will uglify our code(It will shorten the name of our identifiers) - This will reduce the size of our bundle.
+

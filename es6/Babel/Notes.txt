@@ -1,0 +1,14 @@
+Babel - Is a transpiler
+
+Packages to install to use Babel:
+
+1. babel-cli - is the babels command line interface - is the tool which is run from command line / terminal.
+2. babel-core - core of babel where all the logic for transpiling the code is implemented.
+3. babel-preset-env - In babel we have a plugin for every new JS feature starting from ES6.
+Example - if we want to use let and const we need to mention that in preset.
+
+These are all dev dependencies => they will not go in production but will used only for development.
+
+command to install these: 
+
+npm install babel-cli babel-core babel-preset-env --save-dev

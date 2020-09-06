@@ -12,6 +12,8 @@
 
 class Circle{
 
+    name = 'Ratnes';
+
     constructor( radius ){
         this.radius = radius;
         this.move = function(){
@@ -21,6 +23,7 @@ class Circle{
     }
     draw(){
         console.log('draw');
+        this.name = 'jkk'
     }
     // On prototype
 }
@@ -30,5 +33,5 @@ const c1 = new Circle(1);
 const c2 = new Circle(2);
 
 console.log(c1);
-console.log(typeof Circle);
 c1.draw();
+console.log(typeof Circle);
